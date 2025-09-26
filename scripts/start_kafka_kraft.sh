@@ -253,12 +253,12 @@ main() {
         if timeout 10s bin/kafka-topics.sh --bootstrap-server localhost:9092 --list >/dev/null 2>&1; then
             print_success "✅ Teste manual passou - Kafka está funcionando!"
             
-            # Criar tópico 'vendas' automaticamente
-            print_info "📝 Criando tópico 'vendas' automaticamente..."
-            if timeout 15s bin/kafka-topics.sh --bootstrap-server localhost:9092 --create --topic vendas --partitions 6 --replication-factor 1 >/dev/null 2>&1; then
-                print_success "✅ Tópico 'vendas' criado com sucesso!"
+            # Criar tópico 'sales' automaticamente
+            print_info "📝 Criando tópico 'sales' automaticamente..."
+            if timeout 15s bin/kafka-topics.sh --bootstrap-server localhost:9092 --create --topic sales --partitions 6 --replication-factor 1 >/dev/null 2>&1; then
+                print_success "✅ Tópico 'sales' criado com sucesso!"
             else
-                print_warning "⚠️ Tópico 'vendas' pode já existir ou houve problema na criação"
+                print_warning "⚠️ Tópico 'sales' pode já existir ou houve problema na criação"
             fi
         else
             print_warning "⚠️ Teste manual falhou - Kafka pode ainda estar inicializando"
