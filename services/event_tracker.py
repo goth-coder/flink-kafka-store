@@ -1,6 +1,5 @@
 """
 EventTracker Service - New event detection
-Extracted from: 03_flink_real_time_analytics.py (lines 20-50)
 Responsibility: Event-driven logic for sliding windows
 """
 

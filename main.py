@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
 """
 Main - Single entry point for the MVC application
-Replaces the original 03_flink_real_time_analytics.py
 Architecture: MVC with separation of responsibilities
 Manual Kafka control via --kafka
 
 Usage:
-    python main.py              # Run analytics (assumes Kafka is already running)
-    python main.py --producer   # Run producer (assumes Kafka is already running)
-    python main.py --kafka      # Start only Kafka
-    python main.py --stats      # Show statistics
+    python main.py [--analytics] # Run analytics (assumes Kafka is already running)
+    python main.py --producer    # Run producer (assumes Kafka is already running)
+    python main.py --kafka       # Start only Kafka
+    python main.py --stats       # Show statistics
 """
 
 import sys

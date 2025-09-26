@@ -58,22 +58,8 @@ graph LR
 
 ---
 
-## 🎯 **ML Engineering Integration**
+The pipeline can be used as a foundation for feature engineering in machine learning workflows, enabling the extraction and transformation of real-time data for advanced analytics. See the examples of ML use cases enabled below.
 
-### **🧠 Feature Engineering Pipeline**
-
-The platform is designed as a **Feature Engineering backbone** for ML workflows:
-
-```python
-# Real-time feature extraction ready for ML models
-ml_features = {
-    'seller_volume_last_1h': sliding_window_aggregation(seller_id, '1H'),
-    'category_trend_30min': trend_analysis(category, '30min'), 
-    'price_zscore': statistical_normalization(price, category),  # Updated field name
-    'seasonality_score': temporal_feature_engineering(sale_date),  # Updated field name
-    'customer_behavior_vector': behavioral_embeddings(customer_actions)
-}
-```
 
 ### **🔮 ML Use Cases Enabled**
 
@@ -122,32 +108,6 @@ def configure_sliding_window():
 - **Trend detection** with smooth transitions  
 - **Real-time alerting** for business-critical events
 
-### **2. Data Quality & Governance**
-
-#### **Multi-Layer Validation**
-
-```python
-# Quality Gates Implementation
-def validate_event_quality(event):
-    quality_checks = [
-        event['total_sales'] >= 5,          # Statistical significance
-        event['total_revenue'] >= 100,      # Business relevance
-        event['unique_sellers'] >= 2,       # Distribution validation
-        is_valid_timestamp(event['timestamp']), # Temporal consistency
-        schema_validation(event)             # Structure compliance
-    ]
-    return all(quality_checks)
-```
-
-#### **Data Lineage & Auditability**
-
-Every event maintains complete lineage:
-- **Source**: Amazon product catalog + synthetic sales
-- **Transformations**: Partition assignment, timestamp addition
-- **Processing**: Sliding window aggregations
-- **Output**: ML-ready features + business insights
-
----
 
 ## 🛡️ **Production-Grade Features**
 

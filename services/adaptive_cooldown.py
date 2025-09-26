@@ -1,6 +1,5 @@
 """
 AdaptiveCooldown Service - Intelligent cooldown system
-Extracted from: 03_flink_real_time_analytics.py (lines 52-93) 
 Responsibility: Adaptive anti-spam control for outputs
 """
 

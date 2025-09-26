@@ -1,6 +1,5 @@
 """
 EventAnalyzer Service - Intelligent event analysis
-Extracted from: 03_flink_real_time_analytics.py (lines 96-139)
 Responsibility: Generate insights based on detected patterns
 """
 

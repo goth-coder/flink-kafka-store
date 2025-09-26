@@ -1,6 +1,5 @@
 """
 AnalyticsController - Main controller to coordinate analytics
-Extracted from: 03_flink_real_time_analytics.py (main function and main class)
 Responsibility: Orchestrate services and coordinate event-driven flow
 """
 
