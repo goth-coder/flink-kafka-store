@@ -278,12 +278,15 @@ python main.py --kafka --stop  # (if implemented)
 ## 📊 **Real-World Dataset **
 
 ### **Amazon Product Catalog**
-
 - **🛍️ 9,816 unique products** (after data cleaning)
 - **📂 248 categories** (Electronics, Books, Clothing, etc.)
 - **💰 Realistic price distributions** by category
 - **🌍 International brands** and product names
 - **🔍 Rich metadata** (descriptions, ratings, availability)
+
+**Dataset Source:**  
+[Amazon Products Dataset (2023, 1.4M products) on Kaggle](https://www.kaggle.com/datasets/asaniczka/amazon-products-dataset-2023-1-4m-products)
+
 
 ### **Synthetic Sales Generation**
 
